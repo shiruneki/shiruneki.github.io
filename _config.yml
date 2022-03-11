@@ -1,0 +1,64 @@
+# Site
+name: "uwu"
+title: "uwu"
+description: "Shiru's personal blog"
+# TODO logo: 'imgs/logo.png'
+# TODO favicon: 'imgs/logo.png'
+# TODO esto lleva a un / dentro de su github.io.. baseurl: /mediumish-theme-jekyll
+# TODO google_analytics: 'UA-46278016-1'
+disqus: 'demowebsite'
+include: ["_pages"]
+# TODO permalink: /:title/
+permalink: /blog/:year/:month/:day/:title
+
+# Authors
+authors:
+  sal:
+    name: shiru
+    display_name: Shiru
+    avatar: 'imgs/avatar.jpg'
+    email: aimewmew@gmail.com
+    twitter: https://twitter.com/shiru__u
+# TODO    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+# TODO
+adsense: "enabled"
+adsense-data-ad-client: "ca-pub-9793726846386489"
+#adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
